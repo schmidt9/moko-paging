@@ -54,7 +54,7 @@ else
   fi
 fi
 
-MPP_PROJECT_ROOT="$SRCROOT/../../mpp-library"
+MPP_PROJECT_ROOT="$SRCROOT/../Frameworks/moko-paging/sample/mpp-library"
 GRADLE_TASK="syncMultiPlatformLibrary${CONFIG}Framework${TARGET}${ARCH}"
 
 "$MPP_PROJECT_ROOT/../gradlew" -p "$MPP_PROJECT_ROOT" "$GRADLE_TASK"

@@ -1,12 +1,12 @@
 [versions]
-kotlinVersion = "1.6.20"
-androidAppCompatVersion = "1.2.0"
-androidLifecycleVersion = "2.1.0"
-androidCoreTestingVersion = "2.1.0"
-recyclerViewVersion = "1.1.0"
+kotlinVersion = "2.0.21"
+androidAppCompatVersion = "1.7.0"
+androidLifecycleVersion = "2.2.0"
+androidCoreTestingVersion = "2.2.0"
+recyclerViewVersion = "1.3.2"
 swipeRefreshLayoutVersion = "1.1.0"
-ktorClientVersion = "2.0.0"
-coroutinesVersion = "1.6.0-native-mt"
+ktorClientVersion = "2.1.1"
+coroutinesVersion = "1.8.0"
 mokoMvvmVersion = "0.12.0"
 mokoResourcesVersion = "0.18.0"
 mokoUnitsVersion = "0.8.0"
@@ -24,15 +24,16 @@ mokoUnits = { module = "dev.icerock.moko:units", version.ref = "mokoUnitsVersion
 mokoUnitsDataBinding = { module = "dev.icerock.moko:units-databinding", version.ref = "mokoUnitsVersion" }
 mokoMvvmLiveData = { module = "dev.icerock.moko:mvvm-livedata", version.ref = "mokoMvvmVersion" }
 mokoMvvmState = { module = "dev.icerock.moko:mvvm-state", version.ref = "mokoMvvmVersion" }
+kotlinTest = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlinVersion" }
 kotlinTestJUnit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlinVersion" }
 androidCoreTesting = { module = "androidx.arch.core:core-testing", version.ref = "androidCoreTestingVersion" }
 ktorClientMock = { module = "io.ktor:ktor-client-mock", version.ref = "ktorClientVersion" }
 
 kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinVersion" }
-androidGradlePlugin = { module = "com.android.tools.build:gradle", version = "7.0.4" }
-googleServicesGradlePlugin = { module = "com.google.gms:google-services", version = "4.3.8" }
-firebaseGradlePlugin = { module = "com.google.firebase:firebase-crashlytics-gradle", version = "2.2.0" }
-mokoGradlePlugin = { module = "dev.icerock.moko:moko-gradle-plugin", version = "0.1.0" }
-mobileMultiplatformGradlePlugin = { module = "dev.icerock:mobile-multiplatform", version = "0.14.1" }
+androidGradlePlugin = { module = "com.android.tools.build:gradle", version = "8.7.2" }
+googleServicesGradlePlugin = { module = "com.google.gms:google-services", version = "4.4.2" }
+firebaseGradlePlugin = { module = "com.google.firebase:firebase-crashlytics-gradle", version = "3.0.2" }
+mokoGradlePlugin = { module = "dev.icerock.moko:moko-gradle-plugin", version = "0.4.2" }
+mobileMultiplatformGradlePlugin = { module = "dev.icerock:mobile-multiplatform", version = "0.14.4" }
 kotlinSerializationGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlinVersion" }
 mokoUnitsGeneratorGradlePlugin = { module = "dev.icerock.moko:units-generator", version.ref = "mokoUnitsVersion" }

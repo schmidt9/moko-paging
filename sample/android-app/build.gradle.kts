@@ -9,6 +9,7 @@ plugins {
 }
 
 android {
+    namespace = "dev.icerock.moko"
     buildFeatures.dataBinding = true
 
     defaultConfig {

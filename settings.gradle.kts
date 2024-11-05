@@ -3,10 +3,9 @@
  */
 
 plugins {
-    id("com.gradle.enterprise") version "3.10.1"
+    id("com.gradle.enterprise") version "3.13.1"
 }
 
-enableFeaturePreview("VERSION_CATALOGS")
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 dependencyResolutionManagement {

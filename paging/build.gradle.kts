@@ -10,7 +10,11 @@ plugins {
 }
 
 kotlin {
-  jvm()
+    jvm()
+}
+
+android {
+    namespace = "dev.icerock.moko"
 }
 
 dependencies {
@@ -18,9 +22,8 @@ dependencies {
     commonMainApi(libs.mokoMvvmLiveData)
     commonMainApi(libs.mokoMvvmState)
 
-    commonTestImplementation(libs.kotlinTestJUnit)
+    commonTestImplementation(libs.kotlinTest)
     androidTestImplementation(libs.androidCoreTesting)
     commonTestImplementation(libs.ktorClient)
     commonTestImplementation(libs.ktorClientMock)
-    iosX64TestImplementation(libs.coroutines)
 }

@@ -74,40 +74,6 @@ extension TestViewController: UITableViewDelegate {
     }
 }
 
-class LoadingTableViewCell: UITableViewCell, Fillable, Reusable {
-    @IBOutlet private var activityIndicator: UIActivityIndicatorView!
-    
-    typealias DataType = Void
-    
-    static func reusableIdentifier() -> String {
-        "loading"
-    }
-    
-    static func xibName() -> String {
-        "LoadingTableViewCell"
-    }
-    
-    func fill(_ data: Void) {}
-    
-    override func prepareForReuse() {
-        activityIndicator.startAnimating()
-    }
-}
 
-class ProductTableViewCell: UITableViewCell, Fillable, Reusable {
-    @IBOutlet private var titleLabel: UILabel!
-    
-    typealias DataType = String
-    
-    static func reusableIdentifier() -> String {
-        "product"
-    }
-    
-    static func xibName() -> String {
-        "ProductTableViewCell"
-    }
-    
-    func fill(_ data: String) {
-        titleLabel.text = data
-    }
-}
+
+

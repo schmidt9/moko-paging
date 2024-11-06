@@ -4,7 +4,7 @@
 
 import UIKit
 
-@UIApplicationMain
+@main
 class AppDelegate: NSObject, UIApplicationDelegate {
     
     var window: UIWindow?
